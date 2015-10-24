@@ -5,7 +5,7 @@ angular
     'ngResource'
     'ngRoute'
   ]
-  .config ($routeProvider) ->
+  .config ($routeProvider, $locationProvider) ->
     $routeProvider
       .when '/',
         templateUrl: 'views/main.html'
@@ -14,3 +14,4 @@ angular
       .otherwise
         redirectTo: '/'
 
+    $locationProvider.html5Mode true
