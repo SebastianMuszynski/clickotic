@@ -2,9 +2,17 @@
   font-family: 'Droid Sans', sans-serif
   font-size:   9vw
   position:    absolute
-  top:         50%
+  opacity:     0
+  top:         40%
   left:        50%
   transform:   translateX(-20%) translateY(-50%)
   color:       white
   font-weight: bold
   text-shadow: 5px 5px 2px black
+  animation:   enter-text 2s ease-out .5s 1
+  animation-fill-mode: forwards
+
+@keyframes enter-text
+  to
+    opacity: 1
+    top:     50%
