@@ -11,9 +11,9 @@ angular
         templateUrl: 'views/main.html'
         controller: 'MainCtrl'
         controllerAs: 'mainCtrl'
-      .when '/diagram',
-        templateUrl: 'views/diagram.html'
-        controller: 'DiagramCtrl'
-        controllerAs: 'diagramCtrl'
+      .when '/robot',
+        templateUrl: 'views/robot.html'
+        controller: 'RobotCtrl'
+        controllerAs: 'robotCtrl'
       .otherwise
         redirectTo: '/'
