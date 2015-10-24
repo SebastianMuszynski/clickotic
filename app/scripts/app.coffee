@@ -1,16 +1,8 @@
 'use strict'
 
-###*
- # @ngdoc overview
- # @name clickoticApp
- # @description
- # # clickoticApp
- #
- # Main module of the application.
-###
 angular
   .module 'clickoticApp', [
-    'ngResource',
+    'ngResource'
     'ngRoute'
   ]
   .config ($routeProvider) ->
