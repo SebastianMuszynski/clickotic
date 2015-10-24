@@ -5,7 +5,7 @@ angular
     'ngResource'
     'ngRoute'
   ]
-  .config ($routeProvider, $locationProvider) ->
+  .config ($routeProvider) ->
     $routeProvider
       .when '/',
         templateUrl: 'views/main.html'
@@ -17,5 +17,3 @@ angular
         controllerAs: 'diagramCtrl'
       .otherwise
         redirectTo: '/'
-
-    $locationProvider.html5Mode true
