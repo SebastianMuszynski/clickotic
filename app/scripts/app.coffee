@@ -10,7 +10,11 @@ angular
       .when '/',
         templateUrl: 'views/main.html'
         controller: 'MainCtrl'
-        controllerAs: 'main'
+        controllerAs: 'mainCtrl'
+      .when '/diagram',
+        templateUrl: 'views/diagram.html'
+        controller: 'DiagramCtrl'
+        controllerAs: 'diagramCtrl'
       .otherwise
         redirectTo: '/'
 
