@@ -30,6 +30,8 @@ module.exports = function (grunt) {
   // Define the configuration for all the tasks
   grunt.initConfig({
 
+    pkg: grunt.file.readJSON('package.json'),
+
     // Project settings
     yeoman: appConfig,
 
@@ -476,7 +478,7 @@ module.exports = function (grunt) {
         options: {
           remote: 'git@heroku.com:clickotic.git',
           branch: 'master',
-          tag: '0.0.1'
+          tag: '<%= pkg.version %>'
         }
       },
       local: {
