@@ -1,19 +1,39 @@
-.title
+.main-text
   font-family: 'Droid Sans', sans-serif
   font-size:   9vw
   position:    absolute
-  opacity:     0
-  top:         35%
   left:        50%
+  opacity:     0
   transform:   translateX(-20%) translateY(-50%)
   color:       grey
   font-weight: bold
   text-shadow: 5px 5px 2px black
-  animation:   enter-text 2s ease-out .5s 1
-  animation-fill-mode: forwards
 
-@keyframes enter-text
+.title
+  animation: enter-title 1s ease-out .5s 1
+  animation-fill-mode: forwards
+  top:       35%
+
+@keyframes enter-title
   to
     opacity: 1
     top:     45%
     color:   white
+
+.start
+  text-shadow: 3px 3px 1px black
+  animation:   enter-start .5s ease-out 1.5s 1
+  animation-fill-mode: forwards
+  top:       55%
+  font-size: 4vw
+
+@keyframes enter-start
+  to
+    opacity: 1
+    top:     58%
+    color:   white
+
+.start i
+  transition: all .3s
+.start a:hover i
+  margin-left: 10px
