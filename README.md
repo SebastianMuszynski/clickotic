@@ -1,12 +1,5 @@
-# clickotic
+# CLICKOTIC
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.12.1.
+The main idea of _CLICKOTIC_ is to allow a user to run programs on industrial robots in an easy and simple way.
 
-## Build & development
-
-Run `grunt` for building and `grunt serve` for preview.
-
-## Testing
-
-Running `grunt test` will run the unit tests with karma.
+Designed and written during [AGHacks](aghacks.com) (2015).
